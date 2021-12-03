@@ -6,8 +6,10 @@ import renderWithRouter from '../renderWithRouter';
 import pokemons from '../data';
 
 describe('Teste o componente <Pokedex.js />', () => {
-  test('Teste se página contém um heading h2 com o texto Encountered pokémons', () => {
+  beforeEach(() => {
     renderWithRouter(<App />);
+  });
+  test('Teste se página contém um heading h2 com o texto Encountered pokémons', () => {
     const titlePokedex = screen.getAllByRole('heading', {
       name: /Encountered pokémons/i,
       level: 2 });
@@ -15,7 +17,6 @@ describe('Teste o componente <Pokedex.js />', () => {
   });
 
   test('Teste se é exibido o próximo Pokémon quando o botão Próximo é clicado.', () => {
-    renderWithRouter(<App />);
     const buttonNext = screen.getByText(/próximo pokémon/i);
     expect(buttonNext).toBeInTheDocument();
 
@@ -30,6 +31,5 @@ describe('Teste o componente <Pokedex.js />', () => {
   });
 
   test('Teste se é mostrado apenas um Pokémon por vez.', () => {
-    renderWithRouter(<App />);
   });
 });

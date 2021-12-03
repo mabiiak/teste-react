@@ -33,4 +33,3 @@ describe('Teste o componente <FavoritePokemons.js />', () => {
 });
 
 // Simulamos a navegação que um usuario teria para favoritar um pokemon
-// Problemas com os commits...
