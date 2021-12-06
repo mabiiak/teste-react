@@ -3,7 +3,6 @@ import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 import App from '../App';
 import renderWithRouter from '../renderWithRouter';
-import pokemons from '../data';
 
 describe('Teste o componente <Pokedex.js />', () => {
   beforeEach(() => {
