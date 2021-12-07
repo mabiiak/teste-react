@@ -40,10 +40,8 @@ describe('Teste o componente <Pokemon.js />', () => {
 
   test('Teste se ao clicar em datails, é feito o direcionamento para detalhes.', () => {
     const { history } = renderWithRouter(<App />);
-
     const linkPokemon = screen.getByText(/more details/i);
     userEvent.click(linkPokemon);
-
     expect(history.location.pathname).toEqual('/pokemons/25');
   });
 
@@ -63,3 +61,5 @@ describe('Teste o componente <Pokemon.js />', () => {
     expect(imgStarAtl).toHaveAttribute('src', ('/star-icon.svg'));
   });
 });
+
+// problemas com o avaliador
