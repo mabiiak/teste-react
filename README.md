@@ -4,7 +4,7 @@ Projeto feito durante o curso de desenvolvimento web na trybe.
 
 Nesse projeto você vera testes para uma aplicação React.
 
-# Habilidades
+## Habilidades
 
 * Utilizar os seletores (queries) da React-Testing-Library em testes automatizados.
 
